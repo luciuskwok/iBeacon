@@ -19,8 +19,6 @@
 		E03413DC17F792B0005A0E0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03413DB17F792B0005A0E0D /* XCTest.framework */; };
 		E03413DD17F792B0005A0E0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03413BC17F792B0005A0E0D /* Foundation.framework */; };
 		E03413DE17F792B0005A0E0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03413C017F792B0005A0E0D /* UIKit.framework */; };
-		E03413E617F792B0005A0E0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E03413E417F792B0005A0E0D /* InfoPlist.strings */; };
-		E03413E817F792B0005A0E0D /* iBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413E717F792B0005A0E0D /* iBeaconTests.m */; };
 		E03413F617F7AB81005A0E0D /* FTBeaconDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413F517F7AB81005A0E0D /* FTBeaconDataPoint.m */; };
 		E03413F917F7ACBB005A0E0D /* FTBeaconHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413F817F7ACBB005A0E0D /* FTBeaconHistoryView.m */; };
 /* End PBXBuildFile section */
@@ -52,9 +50,6 @@
 		E03413D417F792B0005A0E0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E03413DA17F792B0005A0E0D /* iBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03413DB17F792B0005A0E0D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E03413E317F792B0005A0E0D /* iBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBeaconTests-Info.plist"; sourceTree = "<group>"; };
-		E03413E517F792B0005A0E0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E03413E717F792B0005A0E0D /* iBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconTests.m; sourceTree = "<group>"; };
 		E03413F417F7AB81005A0E0D /* FTBeaconDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBeaconDataPoint.h; sourceTree = "<group>"; };
 		E03413F517F7AB81005A0E0D /* FTBeaconDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBeaconDataPoint.m; sourceTree = "<group>"; };
 		E03413F717F7ACBB005A0E0D /* FTBeaconHistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBeaconHistoryView.h; sourceTree = "<group>"; };
@@ -89,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				E03413C217F792B0005A0E0D /* iBeacon */,
-				E03413E117F792B0005A0E0D /* iBeaconTests */,
 				E03413BB17F792B0005A0E0D /* Frameworks */,
 				E03413BA17F792B0005A0E0D /* Products */,
 			);
@@ -140,24 +134,6 @@
 				E03413C517F792B0005A0E0D /* InfoPlist.strings */,
 				E03413C817F792B0005A0E0D /* main.m */,
 				E03413CA17F792B0005A0E0D /* iBeacon-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E03413E117F792B0005A0E0D /* iBeaconTests */ = {
-			isa = PBXGroup;
-			children = (
-				E03413E717F792B0005A0E0D /* iBeaconTests.m */,
-				E03413E217F792B0005A0E0D /* Supporting Files */,
-			);
-			path = iBeaconTests;
-			sourceTree = "<group>";
-		};
-		E03413E217F792B0005A0E0D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E03413E317F792B0005A0E0D /* iBeaconTests-Info.plist */,
-				E03413E417F792B0005A0E0D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03413E617F792B0005A0E0D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03413E817F792B0005A0E0D /* iBeaconTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +275,6 @@
 				E03413CF17F792B0005A0E0D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E03413E417F792B0005A0E0D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E03413E517F792B0005A0E0D /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
