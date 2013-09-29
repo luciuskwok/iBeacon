@@ -21,6 +21,8 @@
 		E03413DE17F792B0005A0E0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03413C017F792B0005A0E0D /* UIKit.framework */; };
 		E03413E617F792B0005A0E0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E03413E417F792B0005A0E0D /* InfoPlist.strings */; };
 		E03413E817F792B0005A0E0D /* iBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413E717F792B0005A0E0D /* iBeaconTests.m */; };
+		E03413F617F7AB81005A0E0D /* FTBeaconDataPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413F517F7AB81005A0E0D /* FTBeaconDataPoint.m */; };
+		E03413F917F7ACBB005A0E0D /* FTBeaconHistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E03413F817F7ACBB005A0E0D /* FTBeaconHistoryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		E03413E317F792B0005A0E0D /* iBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		E03413E517F792B0005A0E0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E03413E717F792B0005A0E0D /* iBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iBeaconTests.m; sourceTree = "<group>"; };
+		E03413F417F7AB81005A0E0D /* FTBeaconDataPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBeaconDataPoint.h; sourceTree = "<group>"; };
+		E03413F517F7AB81005A0E0D /* FTBeaconDataPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBeaconDataPoint.m; sourceTree = "<group>"; };
+		E03413F717F7ACBB005A0E0D /* FTBeaconHistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBeaconHistoryView.h; sourceTree = "<group>"; };
+		E03413F817F7ACBB005A0E0D /* FTBeaconHistoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBeaconHistoryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,13 @@
 			children = (
 				E03413CB17F792B0005A0E0D /* FTAppDelegate.h */,
 				E03413CC17F792B0005A0E0D /* FTAppDelegate.m */,
-				E03413CE17F792B0005A0E0D /* Main.storyboard */,
 				E03413D117F792B0005A0E0D /* FTViewController.h */,
 				E03413D217F792B0005A0E0D /* FTViewController.m */,
+				E03413F717F7ACBB005A0E0D /* FTBeaconHistoryView.h */,
+				E03413F817F7ACBB005A0E0D /* FTBeaconHistoryView.m */,
+				E03413F417F7AB81005A0E0D /* FTBeaconDataPoint.h */,
+				E03413F517F7AB81005A0E0D /* FTBeaconDataPoint.m */,
+				E03413CE17F792B0005A0E0D /* Main.storyboard */,
 				E03413D417F792B0005A0E0D /* Images.xcassets */,
 				E03413C317F792B0005A0E0D /* Supporting Files */,
 			);
@@ -251,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03413CD17F792B0005A0E0D /* FTAppDelegate.m in Sources */,
+				E03413F617F7AB81005A0E0D /* FTBeaconDataPoint.m in Sources */,
 				E03413C917F792B0005A0E0D /* main.m in Sources */,
 				E03413D317F792B0005A0E0D /* FTViewController.m in Sources */,
+				E03413F917F7ACBB005A0E0D /* FTBeaconHistoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
