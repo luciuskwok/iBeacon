@@ -18,7 +18,7 @@
     self.locationManager = [CLLocationManager new];
     self.locationManager.delegate = self;
 	
-    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
+    NSUUID *uuid = [[NSUUID alloc] initWithUUIDString:@"34AFFAA6-5C2B-4736-AEF4-26B9EA4E28A2"];
     self.region = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:uuid.UUIDString];
     [self.locationManager startRangingBeaconsInRegion:self.region];
 }
@@ -35,23 +35,23 @@
 {
     for (CLBeacon *beacon in beacons) {
 		
-		if ([beacon.major integerValue] == 9) {
+		if ([beacon.major integerValue] == 1) {
 			UILabel *infoLabel = nil;
 			FTBeaconHistoryView *historyView = nil;
 			switch ([beacon.minor integerValue]) {
-				case 1:
+				case 81:
 					infoLabel = self.beaconAInfoLabel;
 					historyView = self.beaconAHistory;
 					break;
-				case 3:
+				case 35:
 					infoLabel = self.beaconBInfoLabel;
 					historyView = self.beaconBHistory;
 					break;
-				case 5:
+				case 1:
 					infoLabel = self.beaconCInfoLabel;
 					historyView = self.beaconCHistory;
 					break;
-				case 7:
+				case 128:
 					infoLabel = self.beaconDInfoLabel;
 					historyView = self.beaconDHistory;
 					break;
